@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+    <head>
+        <meta charset=utf-8>
+        <title>KONTAKT - Topnails</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">HEM</a></li>
+                <li><a href="ommig.html">OM MIG</a></li>
+                <li><a href="behandlingar.html">BEHANDLINGAR</a></li>
+                <li><a  class="active" href="kontakt.html">KONTAKT</a></li>
+                <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()"><i class="material-icons">menu</i></a></li>
+            </ul>
+        </nav>
+        <main class="main-2">
+            <h1>KONTAKT</h1>
+            <div class="grid-container kontakt-container col-2">
+                <div class="kontakt kontakt-item">
+                    <h2>Sonja</h2>
+                    <p>073 521 95 53</p>
+                    <p>Öppettider 10:00-18:00</p>
+                    <p>Ma Jolie<br>Davidshallsgatan 13 <br>Malmö 211 45</p>
+                </div>
+                <div class="kontakt-item">
+                    <img class="telephone img-fluid" src="images/telephone.png" alt="An illustration of a pink telephone">
+                </div>
+            </div>
+        
+        <div class="msg-container">
+            <h2>BOKA TID</h2>
+            <ul>
+                <li>Ditt Namn *</li>
+                <li><input class="msg-item" type="text"></li>
+                <li>Din Mail *</li>
+                <li><input class="msg-item" type="text"></li>
+                <li>Text *</li>
+                <li><input class="msg-item" id="text" type="text"></li>
+                <li><button class="skicka">SKICKA</button></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+            <small class="Topnails">Topnails</small>
+            <a href="https://www.instagram.com/sonjasonja83/?hl=en  "><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <br>
+            <small>Copyright Sandra Kvesic & Lydia Jenewein</small>
+        </footer>
+        <script>
+            function navToggle(){
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav"){
+                    x.className += " dropped";
+                }
+                else{
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+    <head>
+        <meta charset=utf-8>
+        <title>HEM - Topnails</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body> 
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a class="active" href="index.html">HEM</a></li>
+                <li><a href="ommig.html">OM MIG</a></li>
+                <li><a href="behandlingar.html">BEHANDLINGAR</a></li> 
+                <li><a href="kontakt.html">KONTAKT</a></li>
+                <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()"><i class="material-icons">menu</i></a></li>
+            </ul>
+        </nav>
+        <main class="main">
+        <img  class="img-fluid logo-1" src="images/logo.jpg" alt="An illustration of nail polish"> 
+        <img class="logo-2" src="images/logo2.jpg" alt="An illustration of nail polish">
+        <h1 class="valkommen">Välkommen</h1>
+        <p class="beskrivning">Dina naglar är ditt visitkort. Skäm bort dig med vardagslyx. Hos mig kan du göra allt från vårdande manikyr,Shellack, nagelförlängning, stärka dina naturliga naglar eller häftiga dekorationer. Jag utför behandlingar i både akryl och gelé.</p>
+    </main>
+        <footer>
+            <small class="Topnails">Topnails</small>
+            <a href="https://www.instagram.com/sonjasonja83/?hl=en  "><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <br>
+            <small>Copyright Sandra Kvesic & Lydia Jenewein</small>
+        </footer>
+        <script>
+            function navToggle(){
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav"){
+                    x.className += " dropped";
+                }
+                else{
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

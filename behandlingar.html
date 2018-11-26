@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+    <head>
+        <meta charset=utf-8>
+        <title>BEHANDLINGAR - Topnails</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+            <nav class="topnav" id="myTopnav">
+                    <ul>
+                        <li><a href="index.html">HEM</a></li>
+                        <li><a href="ommig.html">OM MIG</a></li>
+                        <li><a class="active" href="behandlingar.html">BEHANDLINGAR</a></li> 
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                        <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                </nav>
+        <main class="main-2">
+        <h1>BEHANDLINGAR</h1>
+        <div class="grid-container col-4">
+            <div class="grid-item">
+                <h3 class="caption">NYTT SETT GELÉ/AKRYL</h3>
+                <img src="images/franska.jpg" alt="french nails" class="img-fluid img-centered">
+                <h4>299KR</h4>
+            </div>
+            <div class="grid-item">
+                <h3 class="caption">FRANSKA (inkl färg/glitter)</h3>
+                <img src="images/franskafarg.jpg" alt="french nails with color" class="img-fluid img-centered">
+                <h4>500KR</h4>
+            </div>
+            <div class="grid-item">
+                <h3 class="caption">ENFÄRGAT (helfärg inkl färg)</h3>
+                <img src="images/farg.jpg" alt="color nails" class="img-fluid img-centered">
+                <h4>450KR</h4>
+            </div>
+            <div class="grid-item">
+                <h3 class="caption">NATURELLA (helfärg inkl glitter)</h3>
+                <img src="images/glitter.jpg" alt="glitter nails" class="img-fluid img-centered">
+                <h4>400KR</h4>
+            </div>
+        </div> <!-- / .grid-container -->
+    </main>
+    <footer>
+            <small class="Topnails">Topnails</small>
+            <a href="https://www.instagram.com/sonjasonja83/?hl=en  "><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <br>
+            <small>Copyright Sandra Kvesic & Lydia Jenewein</small>
+        </footer>
+        <script>
+            function navToggle(){
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav"){
+                    x.className += " dropped";
+                }
+                else{
+                    x.className = "topnav";
+                }
+            }
+            </script>
+        </body>
+    </html>

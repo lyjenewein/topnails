@@ -1,0 +1,325 @@
+/*======================FONT==============================*/
+@font-face {
+    font-family: stingray;
+    src: url(font/stingray);
+}
+
+
+/*======================HTML==============================*/
+
+
+html {
+    font-family: Montserrat;
+}
+
+body {
+    margin-top: 4em;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left:0;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    padding-top: 0.5em;
+}
+
+button {
+    margin: 2em;
+    padding: 1em;
+    background-color: #DB7093;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*======================NAVBAR===========================*/
+
+.topnav {
+    background-color: #DB7093;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.topnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.topnav ul li { 
+    display: inline;
+}
+
+.topnav ul li a {
+    color: rgb(255,255,255);
+    padding: 1.5em;
+    text-decoration: none;
+    display: none;
+}
+
+.topnav ul li a:hover {
+    background-color: lightpink;
+    color: black;
+}
+
+.topnav.dropped #menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.9em;
+}
+
+.topnav.dropped ul li a {
+    display: block;
+}
+
+.active {
+    text-decoration: underline; 
+    background-color: lightpink;
+}
+
+.active a {
+    color: black;
+}
+
+#menu-icon {
+    float:right;
+    display: block;
+}
+
+.material-icons {
+    font-size: 1em;
+}
+
+.img-fluid {
+    max-width:100%;
+    height: auto;
+}
+
+
+.main {
+    height: 100vh;
+    margin-top: 4em;
+}
+
+.main-2 {
+    margin-top: 4em;
+}
+/*======================FOOTER===========================*/
+
+footer {
+    background-color: #b7b7b7;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.topnails {
+    font-family: stingray;
+    padding-right: 1em;
+    font-size: 20px;
+}
+
+.fa-instagram {
+    color: #DB7093;
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+.fa-facebook-square {
+    color: #DB7093;
+    font-size: 1.5em;
+}
+
+
+/*======================HEM==============================*/
+
+.logo-2 {
+    display:none;
+}
+
+.valkommen {
+    padding-top: 0.5em;
+    font-family: stingray;
+    color: #DB7093;
+}
+
+.beskrivning {
+    padding:2em;
+    padding-bottom: 3em;
+    text-align: left;
+}
+
+/*======================OM MIG==============================*/
+
+.text {
+    text-align: left;
+    padding: 2em;
+}
+
+.sonja {
+    border-radius: 50%;
+    height: 35vh;
+    padding-top: 1em;
+}
+
+/*======================BEHANDLINGAR=============================*/
+
+.grid-container {
+    display:grid;
+    grid-gap:1em;
+    margin: 1em;
+}
+
+.grid-item {
+    background-color: lightpink;
+    padding: 1em;  
+}
+
+.img-centered {
+    max-width: 70%;
+}
+
+.col-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+/*======================contact============================*/
+
+.kontakt {
+    text-align: left;
+    float: left;
+}
+
+.telephone {
+    padding-top: 2em;
+    border-radius: 25%;
+    margin-bottom: 7em;
+}
+
+.kontakt-item {
+    height: 15em;
+}
+
+.msg-container {
+    text-align: left;
+    margin:1em;
+    border: 1px solid #DB7093;
+}
+
+.msg-container h2 {
+    padding-left: 1.5em;
+}
+
+.msg-item {
+    margin: 0.5em;
+    border: 1px solid #DB7093;
+    width: 80%;
+}
+
+.skicka {
+    margin-left: 0.5em;
+    width: 80%;
+}
+
+#text {
+    height: 100px;
+}
+
+
+
+
+
+/*======================DESKTOP===========================*/
+
+@media screen and (min-width: 600px) {
+    #menu-icon{
+        display:none;
+    }
+
+    .topnav ul li a {
+        display: inline-block;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+    }
+
+    .logo-2 {
+        max-width:100%;
+        display: inline;
+    }
+
+    .logo-1 {
+        display:none;
+    }
+
+    .beskrivning {
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 3em;
+        text-align: left;
+    }
+
+    .text {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    
+    .grid-container {
+        margin-left: 10%;
+        margin-right:10%;
+    }
+
+    .col-4 {
+        grid-template-columns: repeat(2,10fr);
+    }
+
+    .caption {
+        font-size: 20px;
+    }
+
+    .kontakt {
+        padding-left: 20%;
+    }
+
+    .telephone {
+        width: 25%;
+    }
+
+    .kontakt-container {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .telephone {
+        width: 50%;
+    }
+
+    .msg-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+
+
+
+
+
+
